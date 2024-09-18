@@ -1,0 +1,78 @@
+[debug] [2024-09-16T09:43:18.830Z] ----------------------------------------------------------------------
+[debug] [2024-09-16T09:43:18.832Z] Command:       /home/phantom/.nvm/versions/node/v20.14.0/bin/node /home/phantom/.nvm/versions/node/v20.14.0/bin/firebase deploy
+[debug] [2024-09-16T09:43:18.833Z] CLI Version:   13.17.0
+[debug] [2024-09-16T09:43:18.833Z] Platform:      linux
+[debug] [2024-09-16T09:43:18.833Z] Node Version:  v20.14.0
+[debug] [2024-09-16T09:43:18.833Z] Time:          Mon Sep 16 2024 05:43:18 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-09-16T09:43:18.833Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-16T09:43:18.836Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-16T09:43:18.949Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-16T09:43:18.950Z] > authorizing via signed-in user (peussipeuss@gmail.com)
+[debug] [2024-09-16T09:43:18.950Z] [iam] checking project teslaclone-92782 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-16T09:43:18.951Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions [none]
+[debug] [2024-09-16T09:43:18.951Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions x-goog-quota-user=projects/teslaclone-92782
+[debug] [2024-09-16T09:43:18.951Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T09:43:19.466Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions failed, reason: 
+[debug] [2024-09-16T09:43:19.466Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions
+[debug] [2024-09-16T09:43:19.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 [none]
+[debug] [2024-09-16T09:43:19.978Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 failed, reason: 
+[debug] [2024-09-16T09:43:19.978Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 (original: request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 failed, reason: )
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-09-16T09:43:32.690Z] ----------------------------------------------------------------------
+[debug] [2024-09-16T09:43:32.694Z] Command:       /home/phantom/.nvm/versions/node/v20.14.0/bin/node /home/phantom/.nvm/versions/node/v20.14.0/bin/firebase deploy
+[debug] [2024-09-16T09:43:32.694Z] CLI Version:   13.17.0
+[debug] [2024-09-16T09:43:32.694Z] Platform:      linux
+[debug] [2024-09-16T09:43:32.695Z] Node Version:  v20.14.0
+[debug] [2024-09-16T09:43:32.695Z] Time:          Mon Sep 16 2024 05:43:32 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-09-16T09:43:32.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-16T09:43:32.698Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-16T09:43:32.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-16T09:43:32.816Z] > authorizing via signed-in user (peussipeuss@gmail.com)
+[debug] [2024-09-16T09:43:32.816Z] [iam] checking project teslaclone-92782 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-16T09:43:32.817Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions [none]
+[debug] [2024-09-16T09:43:32.817Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions x-goog-quota-user=projects/teslaclone-92782
+[debug] [2024-09-16T09:43:32.817Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T09:43:33.326Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions failed, reason: 
+[debug] [2024-09-16T09:43:33.327Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions
+[debug] [2024-09-16T09:43:33.328Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 [none]
+[debug] [2024-09-16T09:43:34.551Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 failed, reason: 
+[debug] [2024-09-16T09:43:34.551Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 (original: request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 failed, reason: )
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-09-16T11:38:24.808Z] ----------------------------------------------------------------------
+[debug] [2024-09-16T11:38:24.811Z] Command:       /home/phantom/.nvm/versions/node/v20.14.0/bin/node /home/phantom/.nvm/versions/node/v20.14.0/bin/firebase deploy
+[debug] [2024-09-16T11:38:24.811Z] CLI Version:   13.17.0
+[debug] [2024-09-16T11:38:24.812Z] Platform:      linux
+[debug] [2024-09-16T11:38:24.812Z] Node Version:  v20.14.0
+[debug] [2024-09-16T11:38:24.812Z] Time:          Mon Sep 16 2024 07:38:24 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-09-16T11:38:24.812Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-16T11:38:24.816Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-16T11:38:24.954Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-16T11:38:24.955Z] > authorizing via signed-in user (peussipeuss@gmail.com)
+[debug] [2024-09-16T11:38:24.955Z] [iam] checking project teslaclone-92782 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-16T11:38:24.956Z] > refreshing access token with scopes: []
+[debug] [2024-09-16T11:38:24.960Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-16T11:38:24.960Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-16T11:38:35.641Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-16T11:38:35.641Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-16T11:38:35.734Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions [none]
+[debug] [2024-09-16T11:38:35.734Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions x-goog-quota-user=projects/teslaclone-92782
+[debug] [2024-09-16T11:38:35.735Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T11:38:49.890Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-09-16T11:38:49.891Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-09-16T11:39:11.124Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions 200
+[debug] [2024-09-16T11:39:11.125Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teslaclone-92782:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T11:39:11.126Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 [none]
+[debug] [2024-09-16T11:39:26.140Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2024-09-16T11:39:26.140Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 (original: request to https://firebase.googleapis.com/v1beta1/projects/teslaclone-92782 failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[debug] [2024-09-16T11:39:31.148Z] Error: Timed out.
+    at Timeout._onTimeout (/home/phantom/.nvm/versions/node/v20.14.0/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
